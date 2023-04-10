@@ -1,2 +1,2 @@
 # Transmission-Lines
-A project for Electrical Power Systems course (EEP 225)
+A project for Electrical Power Systems course (EEP 225). 

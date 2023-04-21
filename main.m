@@ -1,3 +1,4 @@
+clc;
 length = input('Transmission line length (in meters): ');
 while length <= 0
     clc;
@@ -12,3 +13,5 @@ while diameter <= 0
 end
 
 [R, C, L] = rcl(length, diameter);
+
+[A, B, C, D] = lineParameters(length, R, C, L);

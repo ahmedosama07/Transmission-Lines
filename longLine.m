@@ -10,4 +10,3 @@ fprintf("Capacitive admitance: %.3f ∠ %.3f° ℧", abs(Y), rad2deg(andle(Y)));
 
 [A, B, C, D] = struct('x', num2cell([NaN, NaN, NaN, NaN])).x;
 end
-

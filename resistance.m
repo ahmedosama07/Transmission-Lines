@@ -9,5 +9,5 @@ while resistivity <= 0
     resistivity = input('Conductor resistivity (in SI units): ');
 end
 area = pi * radius^2 ;                      % conductor cross-section area
-R = resistivity * length/area;              % conductor resistance
+R = resistivity * (length* 10^(-3))/area;   % conductor resistance
 end

@@ -12,6 +12,6 @@ while diameter <= 0
     diameter = input('Conductor diameter (in centimeters): ');
 end
 
-[R, C, L] = rcl(length, diameter);
+[R, Cap, L] = rcl(length, diameter);
 
-[A, B, C, D] = lineParameters(length, R, C, L);
+[A, B, C, D] = lineParameters(length, R, Cap, L);

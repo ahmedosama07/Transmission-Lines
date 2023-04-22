@@ -1,4 +1,4 @@
-function C = capacitance(diameter, length, type)
+function Cap = capacitance(diameter, length, type)
 %capacitance Summary of this function goes here
 %   function that calculates the capacitance of the transmission line
 radius = (diameter / 2) * 10^(-2);
@@ -12,6 +12,6 @@ switch type
         dis = d1 * d2 * d3;
         GMD = nthroot(dis, 3);
 end
-C = (( 2 * pi * 8.85 * 10 ^(-6))/(log(GMD/radius))) * length;
+Cap = (( 2 * pi * 8.85 * 10 ^(-12))/(log(GMD/radius))) * length;
 end
 

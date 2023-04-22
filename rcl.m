@@ -4,7 +4,7 @@ function [r, c, l] = rcl(length, diameter)
 
 type = input('Line spacing: \n1-Symetrical system\n2-Unsymetrical system\n');
 
-r = resistance(diameter, length);
-c = capacitance(diameter, length, type);
-l = inductance(diameter, length, type);
+r = resistance(diameter, length);           % line resistance
+c = capacitance(diameter, length, type);    % line capacitance
+l = inductance(diameter, length, type);     % line inductance
 end

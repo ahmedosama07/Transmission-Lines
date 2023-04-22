@@ -1,8 +1,8 @@
 function L = inductance(diameter, length, type)
 %inductance Summary of this function goes here
 %   function that calculates the inductance of the transmission line
-radius = (diameter / 2) * 10^(-2);
-GMR = radius * exp(-0.25);
+radius = (diameter / 2) * 10^(-2);          % convert radius to meters
+GMR = radius * exp(-0.25);                  % gemetric mean radius
 switch type
     case 1
         GMD = input('Seperation distance (in meters): ');
@@ -13,5 +13,5 @@ switch type
         dis = d1 * d2 * d3;
         GMD = nthroot(dis, 3);
 end
-L = (2 * 10^(-7) * log(GMD/GMR)) * length;
+L = (2 * 10^(-7) * log(GMD/GMR)) * length;  % conductor inductance
 end

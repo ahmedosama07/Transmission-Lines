@@ -11,7 +11,4 @@ switch type
         [efficiency, VR, P_r] = CASE1(A, B, C, D);
     case 2
         [efficiency, VR, P_r] = CASE2(A, B, C, D);
-        
-        
 end
-

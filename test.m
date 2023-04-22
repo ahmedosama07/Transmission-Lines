@@ -1,6 +1,8 @@
-function [efficiency, VR, P_r] = CASE1(A, B, C, D)
-%CASE1 Summary of this function goes here
-%   Detailed explanation goes here
+A = 1;
+B = complex(1, 7);
+C = 0;
+D = 1;
+
 V_r = complex((input('Recieving voltage (in kV): ') / sqrt(3)) * 10^3);
 pf = 0.8;                                        % 0.8 lagging power factor
 phi = -1 * acos(pf);
@@ -18,10 +20,8 @@ pfs = cos(angle(V_s) - angle(I_s));
 
 P_s = 3 * (abs(V_s) .* abs(I_s)) .* pfs;         % sending active power
 
-efficiency = (P_r ./ P_s) .* 100;                  % efficiency
+efficiency = (P_r / P_s) * 100;                  % efficiency
 
 V_rnl = V_s / A;                                 % no load voltage
 
 VR = ((abs(V_rnl) - abs(V_r)) / abs(V_r)) * 100; % voltage regulation
-end
-

@@ -15,3 +15,5 @@ end
 [R, C, L] = rcl(length, diameter);
 
 [A, B, C, D] = lineParameters(length, R, C, L);
+
+[efficiency, VR, P_r] = linePerformance(A, B, C, D);

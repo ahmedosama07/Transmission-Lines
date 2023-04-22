@@ -3,7 +3,7 @@ function [A, B, C, D] = lineParameters(length, R, Cap, L)
 %   function that calculates ABCD parameters of the transmission line
 
 XL = 2 * pi * 50 * L;               % inductive reactance
-YC = 2 * pi * 50 * C * 10^(-6);     % capacitive admittance
+YC = 2 * pi * 50 * Cap;     % capacitive admittance
 Z = complex(R, XL);                 % total complex impedance
 Y = complex(0, YC);                 % total complex admittance
 

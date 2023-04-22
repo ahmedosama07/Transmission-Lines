@@ -1,4 +1,4 @@
-function [efficiency, VR, P_r] = CASE1(A, B, C, D)
+function [efficiency, VR, P_r, pf] = CASE1(A, B, C, D)
 %CASE1 Summary of this function goes here
 %   Detailed explanation goes here
 V_r = complex((input('Recieving voltage (in kV): ') / sqrt(3)) * 10^3);

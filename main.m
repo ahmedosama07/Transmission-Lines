@@ -14,7 +14,6 @@ end
 
 [R, Cap, L] = rcl(length, diameter);
 
-[A, B, C, D] = lineParameters(length, R, C, L);
+[A, B, C, D] = lineParameters(length, R, Cap, L);
 
-[efficiency, VR, P_r] = linePerformance(A, B, C, D);
-cftool(P_r, efficiency);
+[efficiency, VR, P_r, pf] = linePerformance(A, B, C, D);

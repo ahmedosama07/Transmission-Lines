@@ -12,6 +12,6 @@ switch type
         dis = d1 * d2 * d3;
         GMD = nthroot(dis, 3);
 end
-Cap = (( 2 * pi * 8.85 * 10 ^(-12))/(log(GMD/radius))) * length;
+Cap = (( 2 * pi * 8.85 * 10 ^(-6))/(log(GMD/radius))) * length;
 end
 

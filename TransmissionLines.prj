@@ -3,7 +3,7 @@
     <param.appname>TransmissionLines</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.0</param.version>
+    <param.version>1.1</param.version>
     <param.authnamewatermark>Ahmed Osama</param.authnamewatermark>
     <param.email>ahmed.osama8282@gmail.com</param.email>
     <param.company />
@@ -45,7 +45,6 @@
     <unset>
       <param.icon />
       <param.icons />
-      <param.version />
       <param.company />
       <param.summary />
       <param.description />

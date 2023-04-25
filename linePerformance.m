@@ -1,6 +1,6 @@
 function [type, efficiency, VR, P_r, pf] = linePerformance(A, B, C, D)
 %linePerformance Summary of this function goes here
-%   Detailed explanation goes here
+%   function plots line performance
 formats = struct('type', {}, 'style', {}, 'items', {}, 'format', {}, 'limits', {}, 'size', {});
 formats(1,1).type   = 'list';
 formats(1,1).style = 'popupmenu';
@@ -12,8 +12,8 @@ type = value{1};
 switch type
     case 1
         [efficiency, VR, P_r, pf] = CASE1(A, B, C, D);
-%         cftool(P_r, efficiency);
-%         cftool(P_r, VR);
+%          cftool(P_r, efficiency);
+%          cftool(P_r, VR);
     case 2
         [efficiency, VR, P_r, pf] = CASE2(A, B, C, D);
 %         cftool(pf, efficiency(1:length(efficiency)/2));

@@ -1,5 +1,5 @@
 function [efficiency, VR, P_r, pf] = CASE2(A ,B ,C ,D)
-%CASE2 Summary of this function goes here
+%UNTITLED2 Summary of this function goes here
 %   calculate efficiency and voltage reg for case 2
 val = inputdlg("Recieving voltage (in kV): ");
 

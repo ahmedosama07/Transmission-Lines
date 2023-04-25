@@ -1,6 +1,6 @@
 function [efficiency, VR, P_r, pf] = CASE1(A, B, C, D)
 %CASE1 Summary of this function goes here
-%   function measures line performance for 0.8 lagging power factor
+%   Detailed explanation goes here
 val = inputdlg("Recieving voltage (in kV): ");
 
 while isempty(str2num(val{1}))
@@ -10,7 +10,7 @@ end
 V_r = complex((str2num(val{1}) / sqrt(3)) * 10^3);
 pf = 0.8;                                        % 0.8 lagging power factor
 phi = -1 * acos(pf);
-P_r = 0:1000:100*10^(3);                              % recieved active power
+P_r = 0:100*10^(3);                              % recieved active power
 P_r = complex(P_r);
 
 

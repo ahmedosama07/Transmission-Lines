@@ -9,11 +9,11 @@
     <param.company />
     <param.summary />
     <param.description />
-    <param.screenshot />
+    <param.screenshot>${PROJECT_ROOT}\splash.png</param.screenshot>
     <param.guid />
     <param.installpath.string>\TransmissionLines\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo />
+    <param.logo>${PROJECT_ROOT}\splash.png</param.logo>
     <param.install.notes />
     <param.target.install.notes />
     <param.intermediate>${PROJECT_ROOT}\TransmissionLines\for_testing</param.intermediate>
@@ -45,14 +45,14 @@
     <unset>
       <param.icon />
       <param.icons />
+      <param.authnamewatermark />
+      <param.email />
       <param.company />
       <param.summary />
       <param.description />
-      <param.screenshot />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
-      <param.logo />
       <param.install.notes />
       <param.target.install.notes />
       <param.intermediate />
@@ -85,6 +85,7 @@
       <file>${PROJECT_ROOT}\capacitance.m</file>
       <file>${PROJECT_ROOT}\CASE1.m</file>
       <file>${PROJECT_ROOT}\CASE2.m</file>
+      <file>${PROJECT_ROOT}\icon.png</file>
       <file>${PROJECT_ROOT}\inductance.m</file>
       <file>${PROJECT_ROOT}\inputsdlg.m</file>
       <file>${PROJECT_ROOT}\lineParameters.m</file>

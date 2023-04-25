@@ -1,6 +1,6 @@
 function [efficiency, VR, P_r, pf] = CASE1(A, B, C, D)
 %CASE1 Summary of this function goes here
-%   Detailed explanation goes here
+%   function measures line performance for 0.8 lagging power factor
 val = inputdlg("Recieving voltage (in kV): ");
 
 while isempty(str2num(val{1}))

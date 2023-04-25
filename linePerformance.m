@@ -1,6 +1,6 @@
 function [type, efficiency, VR, P_r, pf] = linePerformance(A, B, C, D)
 %linePerformance Summary of this function goes here
-%   Detailed explanation goes here
+%   function plots line performance
 formats = struct('type', {}, 'style', {}, 'items', {}, 'format', {}, 'limits', {}, 'size', {});
 formats(1,1).type   = 'list';
 formats(1,1).style = 'popupmenu';

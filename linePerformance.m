@@ -9,12 +9,12 @@ type = input('');
 switch type
     case 1
         [efficiency, VR, P_r, pf] = CASE1(A, B, C, D);
-        cftool(P_r, efficiency);
-        cftool(P_r, VR);
+        plot(P_r, efficiency);
+        plot(P_r, VR);
     case 2
         [efficiency, VR, P_r, pf] = CASE2(A, B, C, D);
-        cftool(pf, efficiency(1:length(efficiency)/2));
-        cftool(pf, VR(1:length(VR)/2));
-        cftool(pf, efficiency(length(efficiency)/2+1:end));
-        cftool(pf, VR(length(VR)/2+1:end));
+        plot(pf, efficiency(1:length(efficiency)/2));
+        plot(pf, VR(1:length(VR)/2));
+        plot(pf, efficiency(length(efficiency)/2+1:end));
+        plot(pf, VR(length(VR)/2+1:end));
 end

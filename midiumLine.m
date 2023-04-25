@@ -1,7 +1,7 @@
 function [A, B, C, D] = midiumLine(Z, Y)
 %midiumLine Summary of this function goes here
 %   function that calculates ABCD parameters of midiuam transmission line
-model = input('1. Π model\n2. T model');
+model = input('1. Π model\n2. T model\n');
 switch model
     case 1
         [A, B, C, D] = struct('x', num2cell([1 + (Z*Y)/2, Z, Y * (1 + (Z*Y/4)), 1 + (Z*Y)/2])).x;

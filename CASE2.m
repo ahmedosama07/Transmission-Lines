@@ -1,7 +1,13 @@
 function [efficiency, VR, P_r, pf] = CASE2(A ,B ,C ,D)
-%UNTITLED2 Summary of this function goes here
+%CASE2 Summary of this function goes here
 %   calculate efficiency and voltage reg for case 2
-V_r = complex((input('Recieving voltage (in kV): ') / sqrt(3)) * 10^3);
+val = inputdlg("Recieving voltage (in kV): ");
+
+while isempty(str2num(val{1}))
+    val = inputdlg("Recieving voltage (in kV): ");
+end
+
+V_r = complex((str2num(val{1}) / sqrt(3)) * 10^3);
 pf = 0.3:0.01:1;  
 phi_lag = -1 * acos(pf);
 phi_lead = acos(pf);
@@ -34,8 +40,7 @@ V_rnl_lead = V_s_lead / A;                                 % no load voltage lea
 VR_lag = ((abs(V_rnl_lag) - abs(V_r)) / abs(V_r)) * 100; % voltage regulation lag
 VR_lead = ((abs(V_rnl_lead) - abs(V_r)) / abs(V_r)) * 100; % voltage regulation lead
 
-efficiency = [efficiency_lag efficiency_lead];
-VR = [VR_lag VR_lead];
-
+efficiency = [efficiency_lag; efficiency_lead];
+VR = [VR_lag; VR_lead];
 end
 

@@ -3,12 +3,19 @@ function [A, B, C, D] = longLine(Z, Y)
 %   function that calculates ABCD parameters of long transmission line
 %   parameters are set to NaN since they cannot be calculated as the other
 %   two cases
-fprintf("Cannot measure ABCD parameters.\n");
-fprintf("*The distributed nature of the parameters is considered.\n");
-fprintf("*The resistance, inductance, and capacitance of the line are not lumped.\n");
 
-fprintf("Line impedance: %.3f ∠ %.3f° Ω", abs(Z), rad2deg(angle(Z)));
-fprintf("Capacitive admitance: %.3f ∠ %.3f° ℧", abs(Y), rad2deg(angle(Y)));
+line1 = "Cannot measure ABCD parameters.";
+line2 = "*The distributed nature of the parameters is considered.";
+line3 = "*The resistance, inductance, and capacitance of the line are not lumped.";
+line4 = "\bfLine impedance: " + num2str(abs(Z)) + "∠" + num2str(rad2deg(angle(Z))) + "° Ω";
+line5 = "Capacitive admitance: " + num2str(abs(Y)) + "∠" + num2str(rad2deg(angle(Y))) + "° ℧";
+
+CreateStruct.Interpreter = 'tex';
+CreateStruct.WindowStyle = 'non-modal';
+
+msg = [line1; line2; line3; ""; line4; line5];
+msgbox(msg, "Long Line", CreateStruct);
+
 
 [A, B, C, D] = struct('x', num2cell([NaN, NaN, NaN, NaN])).x;
 end

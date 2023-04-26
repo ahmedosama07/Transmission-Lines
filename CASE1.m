@@ -14,7 +14,7 @@ P_r = 0:100*10^(3);                              % recieved active power
 P_r = complex(P_r);
 
 
-I_r = complex((P_r/(3*V_r*pf))*cos(phi), (P_r/(3*V_r*pf))*sin(phi));
+I_r = complex((P_r/(3*V_r*pf)).*cos(phi), (P_r./(3*V_r*pf)).*sin(phi));
                                                  % recieved current
 
 V_s = A * V_r + B * I_r;                         % sending voltage

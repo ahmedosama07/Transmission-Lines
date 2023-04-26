@@ -15,8 +15,8 @@ phi_lead = acos(pf);
 P_r = 100*10^(3);
 P_r = complex(P_r);
 
-I_r_lag = complex((P_r./(3*V_r*pf)).*cos(phi_lag), (P_r./(3*V_r*pf)).*sin(phi_lag));
-I_r_lead = complex((P_r./(3*V_r*pf)).*cos(phi_lead), (P_r./(3*V_r*pf)).*sin(phi_lead));
+I_r_lag = complex((P_r./(3*V_r.*pf)).*cos(phi_lag), (P_r./(3*V_r.*pf)).*sin(phi_lag));
+I_r_lead = complex((P_r./(3*V_r.*pf)).*cos(phi_lead), (P_r./(3*V_r.*pf)).*sin(phi_lead));
 
 V_s_lag = A * V_r + B * I_r_lag;                         % sending voltage lag
 I_s_lag = C * V_r + D * I_r_lag;                         % sending current lag

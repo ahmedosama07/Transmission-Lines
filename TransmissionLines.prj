@@ -3,7 +3,7 @@
     <param.appname>TransmissionLines</param.appname>
     <param.icon />
     <param.icons />
-    <param.version>1.1</param.version>
+    <param.version>1.0</param.version>
     <param.authnamewatermark>Ahmed Osama</param.authnamewatermark>
     <param.email>ahmed.osama8282@gmail.com</param.email>
     <param.company />
@@ -13,7 +13,7 @@
     <param.guid />
     <param.installpath.string>\TransmissionLines\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo>${PROJECT_ROOT}\splash.png</param.logo>
+    <param.logo>${PROJECT_ROOT}\icon.png</param.logo>
     <param.install.notes />
     <param.target.install.notes />
     <param.intermediate>${PROJECT_ROOT}\TransmissionLines\for_testing</param.intermediate>
@@ -45,6 +45,7 @@
     <unset>
       <param.icon />
       <param.icons />
+      <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
